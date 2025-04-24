@@ -7,8 +7,7 @@ body{
   font-family:'Times New Roman', Times, serif;
   font-size: 16px;
   padding: 0;
-  margin: 0;
-
+  margin: 0 !important;
   background-image: url('photos/egg.jpg');
   background-size: cover;
 
@@ -27,7 +26,7 @@ body{
     display:flex !important;
   }
   }
-
+nav{margin-bottom: 3rem;}
 .desktop-menu{
 
   padding: 10px 20px;
@@ -71,7 +70,8 @@ nav a:hover{
   border-radius: 10px;
 }
 .hero{
-
+max-width: 1000px;
+margin-inline: auto;
   height: auto;
   padding: 40px 20px;
   width: 100%;
@@ -107,6 +107,8 @@ nav a:hover{
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  max-width: 1000px;
+margin-inline: auto;
 }  
 .about h2{
   font-size: 2.5rem;
@@ -145,12 +147,15 @@ nav a:hover{
   background-color: #fff4e6;
   text-align: center;
   padding: 40px 20px;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 .cta h2 {
   font-size: 2rem;
   color:#ff6600;
   margin-bottom: 20px;
+
 }
 
 .cta p {
@@ -264,11 +269,12 @@ footer p{
   border-radius: 10px;
   box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px auto;
-  max-width: 100%; /* Corrected max-width to 100% */
+  margin: 20px auto;  
   display:inline-block;
   vertical-align: top;
   text-align: left;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 .product img{
   width:100;
@@ -407,6 +413,8 @@ section{
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin-inline: auto;
 }
 section h2{
   font-size: 2rem;
