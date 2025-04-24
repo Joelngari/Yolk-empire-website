@@ -6,29 +6,53 @@
 body{
   font-family:'Times New Roman', Times, serif;
   font-size: 16px;
-  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
-  color: #181717;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  height:100%;
-  width: auto;
-  overflow-x: hidden;
-  background-image: url('photos/egg.jpg');
-}
+  padding: 0;
+  margin: 0;
 
-nav{
+  background-image: url('photos/egg.jpg');
+  background-size: cover;
+
+}
+@media (max-width: 768px) 
+{
+  body {
+      background-image: url('photos/free-range-eggs.jpg');
+    background-size: cover;
+    background-position: center;
+    
+  }.desktop-menu{
+    display:none !important;
+  }
+  .mobile-menu{
+    display:flex !important;
+  }
+  }
+
+.desktop-menu{
+
+  padding: 10px 20px;
+  max-width: 500px;
+  margin-inline: auto;
+  display:flex;
+  gap: 50px;
+  align-items: center; 
+  color: aliceblue ;
+  z-index: 1000;
+}
+.navv{
+  background-color: #ff6600;
+  width: 100%;
+}
+.mobile-menu{
   background-color: #9694a4b0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
   width: 80%;
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  align-items: center; 
+  display:none;
   position:fixed;
   top: 0;
-  z-index: 1000;
+}
+.mobile-menu ul{
+  list-style: none;
 }
 
 nav a{
@@ -209,11 +233,6 @@ footer p{
     font-size: 1.2rem;
   }
 
-  nav {
-    flex-direction:row;
-    align-items: center;
-    padding: 10px;
-  }
   .hero{
     margin-top:80px;
     padding: 30px 10px;
